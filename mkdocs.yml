@@ -1,6 +1,17 @@
 site_name: SuRu
 extra:
   homepage: https://suru.im
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/suru33
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/u/suru33
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/user/suru33/
+    - icon: fontawesome/brands/npm
+      link: https://www.npmjs.com/~suru33
+
+copyright: Copyright &copy; 2022 - 2023 Surendra
 
 theme:
   name: material
@@ -9,6 +20,8 @@ theme:
     - content.tooltips
     - navigation.tracking
     - navigation.instant
+    - content.tabs.link
+    - navigation.expand
   font:
     text: Open Sans
     code: JetBrains Mono
@@ -22,14 +35,13 @@ markdown_extensions:
   - toc:
       permalink: true
   - admonition
+  - abbr
+  - attr_list
   - pymdownx.details
   - pymdownx.superfences
-  - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
-  - abbr
-  - attr_list
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
@@ -37,7 +49,18 @@ markdown_extensions:
       anchor_linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
 
 plugins:
   - search
-  - git-revision-date-localized
+  - git-revision-date-localized:
+      locale: en
+      type: datetime
+      exclude:
+        - index.md
