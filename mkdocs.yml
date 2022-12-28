@@ -1,4 +1,43 @@
-site_name: suru.im
+site_name: SuRu
+extra:
+  homepage: https://suru.im
 
 theme:
   name: material
+  custom_dir: overrides
+  features:
+    - content.tooltips
+    - navigation.tracking
+    - navigation.instant
+  font:
+    text: Open Sans
+    code: JetBrains Mono
+  palette:
+    primary: green
+    accent: teal
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+
+plugins:
+  - search
+  - git-revision-date-localized
