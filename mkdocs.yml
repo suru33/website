@@ -10,7 +10,11 @@ extra:
       link: https://pypi.org/user/suru33/
     - icon: fontawesome/brands/npm
       link: https://www.npmjs.com/~suru33
+  analytics:
+    provider: google
+    property: G-5B77Q8KHX6
 
+repo_url: https://github.com/suru33/hello-world
 copyright: Copyright &copy; 2022 - 2023 Surendra
 
 theme:
@@ -22,6 +26,7 @@ theme:
     - navigation.instant
     - content.tabs.link
     - navigation.expand
+    - search.share
   font:
     text: Open Sans
     code: JetBrains Mono
