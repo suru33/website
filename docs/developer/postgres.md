@@ -2,7 +2,7 @@
 
 === "From binaries"
 
-    Download and install binaries from [here](https://www.enterprisedb.com/download-postgresql-binaries)
+    :fontawesome-solid-download: and install binaries from [here](https://www.enterprisedb.com/download-postgresql-binaries)
 
 === "MacOS homebrew"
 
@@ -13,7 +13,7 @@
 === "From source"
 
     === "Download zip"
-        Download the source zip from [here](https://www.postgresql.org/ftp/source/)
+        :fontawesome-solid-download: the source zip from [here](https://www.postgresql.org/ftp/source/)
         ```shell
         # Extract the source
         tar -xvzf postgresql-<VERSION>.tar.gz
@@ -21,7 +21,7 @@
         ```
 
     === "Checkout from git repo"
-        Check the tags from  [here](https://git.postgresql.org/gitweb/?p=postgresql.git;a=tags)
+        Check the :fontawesome-brands-git-alt: tags from  [here](https://git.postgresql.org/gitweb/?p=postgresql.git;a=tags)
         ```shell   
         # Clone the repo (assume you are in ~/dev)
         git clone --depth 1 -b <TAG> https://git.postgresql.org/git/postgresql.git
@@ -52,18 +52,18 @@ Create `~/dev/postgres` and `~/dev/postgres/pgdata`
 
 ### env variables and aliases
 
-```shell
-# Postgres config
+```shell title="Postgres config"
 export PG_HOME="$HOME/dev/postgres"
 export PG_LOG_FILE="$PG_HOME/postgres.log"
 export PG_DATA="$PG_HOME/pgdata"
 
-# not required for homebrew installation
-export PATH="$PG_HOME/pgsql/bin:$PATH"
+export PATH="$PG_HOME/pgsql/bin:$PATH" # (1)
 
 alias start_postgres="pg_ctl -D ${PG_DATA} -l ${PG_LOG_FILE} start"
 alias stop_postgres="pg_ctl -D ${PG_DATA} -l ${PG_LOG_FILE} stop"
 ```
+
+1. :man_gesturing_no: not required for homebrew installation
 
 ### InitDB (create database folder structure)
 

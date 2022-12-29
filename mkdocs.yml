@@ -1,4 +1,7 @@
-site_name: SuRu
+site_name: suru(dot)im
+site_author: SuRu
+site_url: https://suru.im
+
 extra:
   homepage: https://suru.im
   social:
@@ -13,6 +16,13 @@ extra:
   analytics:
     provider: google
     property: G-5B77Q8KHX6
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+    MacOS: mac
+    Script: script
+    Database: db
 
 repo_url: https://github.com/suru33/hello-world
 copyright: Copyright &copy; 2022 - 2023 Surendra
@@ -27,6 +37,7 @@ theme:
     - content.tabs.link
     - navigation.expand
     - search.share
+    - content.code.annotate
   font:
     text: Open Sans
     code: JetBrains Mono
@@ -35,6 +46,18 @@ theme:
     accent: teal
   logo: assets/logo.png
   favicon: assets/favicon.png
+  icon:
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css: fontawesome/brands/css3
+      mac: fontawesome/brands/apple
+      script: fontawesome/solid/scroll
+      db: fontawesome/solid/database
+
+extra_css:
+  - stylesheets/extra.css
+
 
 markdown_extensions:
   - toc:
@@ -53,7 +76,8 @@ markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
-  - pymdownx.snippets
+  - pymdownx.snippets:
+      base_path: code
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -64,6 +88,7 @@ markdown_extensions:
 
 plugins:
   - search
+  - tags
   - git-revision-date-localized:
       locale: en
       type: datetime
