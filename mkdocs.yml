@@ -25,7 +25,9 @@ extra:
     Database: db
 
 repo_url: https://github.com/suru33/hello-world
-copyright: Copyright &copy; 2022 - 2023 Surendra
+copyright: |
+  Copyright &copy; 2022 - 2023 Surendra, 
+  License <a style="color: white;" href="https://github.com/suru33/hello-world/blob/master/LICENSE">MIT</a>
 
 theme:
   name: material
