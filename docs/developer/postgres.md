@@ -33,17 +33,20 @@
     # Check openssl
     which openssl
     
+    SSL_DIR="<ssl libs dir>" 
+    # for home brew you can get it using `brew --prefix openssl@1.1` 
+
     # Configure the build
     ./configure --with-openssl \
-      --with-includes=/usr/local/opt/openssl/include \
-      --with-libraries=/usr/local/opt/openssl/lib 
+      --with-includes=${SSL_DIR}/include \
+      --with-libraries=${SSL_DIR}/lib \
       --prefix $HOME/dev/postgres/pgsql
     
     # Make
     make world
     
     # Install
-    make install-world 
+    make install 
     ```
 
 ## Configuration
