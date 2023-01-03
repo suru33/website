@@ -10,10 +10,10 @@
 
 ```shell
 # To show
-defaults write com.apple.Finder AppleShowAllFiles TRUE
+defaults write com.apple.finder AppleShowAllFiles TRUE
 
 # To hide
-defaults write com.apple.Finder AppleShowAllFiles TRUE
+defaults write com.apple.finder AppleShowAllFiles FALSE
 
 # Restart Finder after that
 killall Finder
@@ -21,12 +21,11 @@ killall Finder
 
 ## Screenshot
 
-[//]: # (@formatter:off)
 !!! info "Restart `SystemUIServer` after below changes"
+
     ```shell
     killall SystemUIServer
     ```
-[//]: # (@formatter:on)
 
 ### Change default location
 
@@ -44,4 +43,10 @@ defaults write com.apple.screencapture name "name"
 
 ```shell
 find . -maxdepth 1 -perm -111 -delete
+```
+
+## List all apps installed from App Store
+
+```shell
+find /Applications -path '*Contents/_MASReceipt/receipt' -maxdepth 4 -print | sed 's#.app/Contents/_MASReceipt/receipt#.app#g; s#/Applications/##'
 ```

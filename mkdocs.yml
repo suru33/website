@@ -1,6 +1,11 @@
-site_name: suru(dot)im
+site_name: suru∙im
 site_author: SuRu
 site_url: https://suru.im
+repo_url: https://github.com/suru33/hello-world
+repo_name: suru33/hello-world
+copyright: |
+  Copyright &copy; 2022 - 2023 <a style="color: white;" href="mailto:33urus+helloworld@gmail.com">Surendra</a>, License
+  <a target="_blank" style="color: white;" href="https://github.com/suru33/hello-world/blob/master/LICENSE">MIT</a>
 
 extra:
   homepage: https://suru.im
@@ -24,14 +29,17 @@ extra:
     Script: script
     Database: db
 
-repo_url: https://github.com/suru33/hello-world
-copyright: |
-  Copyright &copy; 2022 - 2023 Surendra, 
-  License <a style="color: white;" href="https://github.com/suru33/hello-world/blob/master/LICENSE">MIT</a>
-
 theme:
   name: material
   custom_dir: overrides
+  logo: assets/logo.png
+  favicon: assets/favicon.png
+  font:
+    text: Source Sans Pro
+    code: JetBrains Mono
+  palette:
+    primary: green
+    accent: teal
   features:
     - content.tooltips
     - navigation.tracking
@@ -40,15 +48,8 @@ theme:
     - navigation.expand
     - search.share
     - content.code.annotate
-  font:
-    text: Open Sans
-    code: JetBrains Mono
-  palette:
-    primary: green
-    accent: teal
-  logo: assets/logo.png
-  favicon: assets/favicon.png
   icon:
+    repo: material/github
     tag:
       html: fontawesome/brands/html5
       js: fontawesome/brands/js
@@ -60,15 +61,24 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
-
 markdown_extensions:
-  - toc:
-      permalink: true
   - admonition
   - abbr
   - attr_list
+  - md_in_html
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.inlinehilite
+  #  https://squidfunk.github.io/mkdocs-material/reference/formatting/
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  # ---
+  - toc:
+      permalink: true
+      title: On this page
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -77,14 +87,8 @@ markdown_extensions:
         - includes/abbreviations.md
   - pymdownx.highlight:
       anchor_linenums: true
-  - pymdownx.inlinehilite
   - pymdownx.snippets:
       base_path: code
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
 
