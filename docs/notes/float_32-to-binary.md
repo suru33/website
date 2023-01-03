@@ -2,9 +2,10 @@
 
 ## For example:
 
-The size of `union` is the size of one of the largest member element
+The size of `#!cpp union` is the size of one of the largest member element
 
-```cpp
+```cpp title="Simple C++ union example" linenums="5"
+    :
 union point_t {
     int i;
     char c;
@@ -23,43 +24,38 @@ std::cout << "f: " << point.f << std::endl;
 
 ### Output:
 
-```shell
+```
 i: 65
 c: A
 f: 9.10844e-44
-
-# `f` value looks like garbage
-# The big one in `point_t` is float. So, the sizeof(point_t) = 32
 ```
+
+- `f` value looks like garbage
+- The big one in `point_t` is float. So, the `#!cpp sizeof(point_t) = 32`
 
 ### `float_32` memory layout
 
 :material-checkbox-blank-badge-outline:
 :material-checkbox-blank::material-checkbox-blank::material-checkbox-blank::material-checkbox-blank:
 :material-checkbox-blank::material-checkbox-blank::material-checkbox-blank::material-checkbox-blank:
+:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
+:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
+:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
+:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
+:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
 :material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
-:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
-:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
-:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
-:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
-:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
-:material-checkbox-blank-outline::material-checkbox-blank-outline::material-checkbox-blank-outline:
-:material-checkbox-blank-outline::material-checkbox-blank-outline:
 
-[//]: # (@formatter:off)
 !!! info
+
     :material-checkbox-blank-badge-outline: `1 bit -> Sign`
 
     :material-checkbox-blank: `8 bits -> Int part (Exponent)`
 
     :material-checkbox-blank-outline: `23 bits -> Decimal part (Significand/Mantissa)`
-[//]: # (@formatter:on)
 
-## Math time
+## How to convert
 
-Converting (+98.569)~10~ to (xxxx)~2~
-
-```shell
+```shell title="Converting (+98.569)<sub>10</sub> to (xxxx)<sub>2</sub>"
  Bit
  Position
       ---

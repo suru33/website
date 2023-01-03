@@ -1,18 +1,18 @@
 # Postgres Installation
 
-=== "From binaries"
+=== ":octicons-file-binary-16: From binaries"
 
     :fontawesome-solid-download: and install binaries from [here](https://www.enterprisedb.com/download-postgresql-binaries)
 
-=== "MacOS homebrew"
+=== ":simple-apple: MacOS homebrew"
 
     ```shell
     brew install postgresql
     ```
 
-=== "From source"
+=== ":material-text-box-outline: From source"
 
-    === "Download zip"
+    === ":fontawesome-solid-file-zipper: Download zip"
         :fontawesome-solid-download: the source zip from [here](https://www.postgresql.org/ftp/source/)
         ```shell
         # Extract the source
@@ -20,8 +20,8 @@
         cd postgresql-<VERSION>
         ```
 
-    === "Checkout from git repo"
-        Check the :fontawesome-brands-git-alt: tags from  [here](https://git.postgresql.org/gitweb/?p=postgresql.git;a=tags)
+    === ":simple-git: Checkout from git repo"
+        Check the tags from [here](https://git.postgresql.org/gitweb/?p=postgresql.git;a=tags)
         ```shell   
         # Clone the repo (assume you are in ~/dev)
         git clone --depth 1 -b <TAG> https://git.postgresql.org/git/postgresql.git
