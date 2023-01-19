@@ -48,6 +48,7 @@ theme:
     - navigation.expand
     - search.share
     - content.code.annotate
+    - content.code.copy
   icon:
     repo: material/github
     tag:
