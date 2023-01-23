@@ -12,6 +12,7 @@ I am a fan of technology, programming, and entrepreneurship.
 
 ## Some of my tools
 
+- :material-web: [boring-devtools](https://boring-devtools.com/)
 - :fontawesome-brands-square-js: [insomnia-plugin-fake](https://www.npmjs.com/package/insomnia-plugin-fake)
 - :fontawesome-brands-rust: [commentgen](https://github.com/suru33/commentgen)
 - :fontawesome-brands-rust: [EAN generator and validator](https://github.com/suru33/ean13)
