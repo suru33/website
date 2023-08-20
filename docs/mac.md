@@ -19,6 +19,12 @@ defaults write com.apple.finder AppleShowAllFiles FALSE
 killall Finder
 ```
 
+## Add space to dock
+
+```shell
+defaults write com.apple.dock persistent-apps -array-add '{"tile-type"="small-spacer-tile";}'; killall Dock
+```
+
 ## Screenshot
 
 !!! info "Restart `SystemUIServer` after below changes"
