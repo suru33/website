@@ -6,15 +6,13 @@ Howdy, I’m Surendra (aka SuRu). I’m a software engineer living in Helsinki, 
 
 I am a fan of technology, programming, and entrepreneurship.
 
-
 [:material-email-fast-outline:](mailto:33urus+helloworld@gmail.com)
-
 
 ## Some of my tools
 
 - :material-web: [boring-devtools](https://boring-devtools.com/)
-- :fontawesome-brands-square-js: [insomnia-plugin-fake](https://www.npmjs.com/package/insomnia-plugin-fake)
+- :custom-plugin: [insomnia-plugin-fake](https://www.npmjs.com/package/insomnia-plugin-fake)
 - :fontawesome-brands-rust: [commentgen](https://github.com/suru33/commentgen)
 - :fontawesome-brands-rust: [EAN generator and validator](https://github.com/suru33/ean13)
 - :fontawesome-brands-python: [maven version comparator](https://github.com/suru33/maven-version-comparator)
-- :fontawesome-brands-cuttlefish:++ [maven version comparator](https://github.com/suru33/mvncmp)
+- :custom-cplusplus: [maven version comparator](https://github.com/suru33/mvncmp)

@@ -34,6 +34,7 @@ theme:
   custom_dir: overrides
   logo: assets/logo.png
   favicon: assets/favicon.png
+  language: en
   font:
     text: Source Sans Pro
     code: JetBrains Mono
@@ -81,8 +82,11 @@ markdown_extensions:
       permalink: true
       title: On this page
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md

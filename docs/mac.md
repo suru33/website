@@ -56,3 +56,9 @@ find . -maxdepth 1 -perm -111 -delete
 ```shell
 find /Applications -path '*Contents/_MASReceipt/receipt' -maxdepth 4 -print | sed 's#.app/Contents/_MASReceipt/receipt#.app#g; s#/Applications/##'
 ```
+
+## Remove shadow from window screenshot
+
+```shell
+defaults write com.apple.screencapture disable-shadow -bool true ; killall SystemUIServer
+```
